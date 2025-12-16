@@ -1,8 +1,6 @@
 import axios from "axios";
 
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
-
-const API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=24.7&lon=46.5&appid=${API_KEY}`;
+const API_URL = `https://api.openweathermap.org/data/2.5/weather?lat=24.7&lon=46.5&appid=b8efc4933a3f228f4c388b6f06771639`;
 
 export function getWeather(cancelToken) {
   return axios.get(API_URL, { cancelToken }).then((response) => {
